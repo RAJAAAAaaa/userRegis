@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b8153bd-84e6-4950-900a-c8e45b19c03e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/userRegis/user/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userRegis/Register/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userRegis/Register/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userRegis/Register/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userRegis/Register/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/userRegis/Register/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userRegis/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/userRegis/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userRegis/userRegis/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/userRegis/userRegis/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userRegis/userRegis/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/userRegis/userRegis/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +22,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Python Script" />
       </list>
     </option>
@@ -31,6 +39,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
