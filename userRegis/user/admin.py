@@ -1,5 +1,7 @@
 from django.contrib import admin
-from .models import *
+from simple_history.admin import SimpleHistoryAdmin
+from .models import Poll, Choice
 
-admin.site.register(Poll)
-admin.site.register(Choice)
+
+admin.site.register(Poll, SimpleHistoryAdmin)
+admin.site.register(Choice, SimpleHistoryAdmin)
