@@ -8,13 +8,16 @@ from simple_history.signals import (
     pre_create_historical_record,
     post_create_historical_record
 )
+from simple_history.utils import update_change_reason
 
-
+register(User)
 class Poll(models.Model):
     question = models.CharField(max_length=200)
     pub_date = models.DateTimeField('date published')
+    changed_by = models.ForeignKey('auth.User', on_delete=models.CASCADE)
+    history = HistoricalRecords(history_change_reason_field=models.TextField(null=True)),
     #log = HistoricalRecords(related_name='history')
-    history = HistoricalRecords(history_id_field=models.UUIDField(default=uuid.uuid4))
+    #history = HistoricalRecords(history_id_field=models.UUIDField(default=uuid.uuid4))
     __history_date = None
 
     @property
@@ -26,9 +29,6 @@ class Poll(models.Model):
         self.__history_date = value
 
 
-#Poll.objects.filter(history__history_user=4)
-
-
 class Choice(models.Model):
     poll = models.ForeignKey(Poll, on_delete=models.CASCADE)
     choice_text = models.CharField(max_length=200)
@@ -36,7 +36,7 @@ class Choice(models.Model):
     history = HistoricalRecords()
 
 
-register(User)
+
 
 
 class IPAddressHistoricalModel(models.Model):
